@@ -1,4 +1,20 @@
-### AL ###
+hi
+# === Config ===
+import os
+
+class Config:
+    API_KEY = "jamb-secret-2025-change-in-prod"
+    QDRANT_URL = "http://localhost:6333"
+    COLLECTION_NAME = "jamb_questions_v3"
+    EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
+    EMBEDDING_DIM = 384
+    OCR_LANG = "eng"
+    DEFAULT_TOP_K = 6
+    LLM_MODEL = "groq/llama3-8b-8192"
+
+    # 🔒 Hidden AI API key for extra services
+    # Make sure to set environment variable: export HIDDEN_AI_KEY=YOUR_KEY
+    HIDDEN_AI_KEY = os.getenv("HIDDEN_AI_KEY", "AIzaSyDjJgrg8j9UZ0yNUqGqNUGavyKfKvXKf_M")### AL ###
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
 .vscode/
